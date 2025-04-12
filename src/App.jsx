@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import IntroPage from './components/IntroPage';
 import './index.css'
@@ -10,12 +10,12 @@ function App() {
 
   useEffect(() => {
     setTimeout(() => {
-      setShowIntro(false)
-    }, 2000)
+      // setShowIntro(false)
+    }, 3400)
   }, []);
 
   return (
-    <Router basename="/mohitbhatia.com">
+    <Router>
       <Routes>
         <Route path="/" element={showIntro ? <IntroPage /> : <Home />} />
       </Routes>

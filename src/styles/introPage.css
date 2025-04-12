@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Bree+Serif&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Corben:wght@400;700&display=swap');
 
 #root {
     width: 100%;
@@ -12,9 +12,9 @@
     display: flex;
     justify-content: center;
     gap: .2rem;
-    font-family: "Exo 2", sans-serif;
+    font-family: "Corben", serif;
     font-weight: 900;
-    font-size: 2rem;
+    font-size: 3rem;
     color: rgb(36, 36, 36);
 }
 
