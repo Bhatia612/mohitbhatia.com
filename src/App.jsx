@@ -10,8 +10,8 @@ function App() {
 
   useEffect(() => {
     setTimeout(() => {
-      // setShowIntro(false)
-    }, 3400)
+      setShowIntro(false)
+    }, 2000)
   }, []);
 
   return (

@@ -5,21 +5,20 @@ import '../styles/introPage.css';
 function IntroPage() {
   useEffect(() => {
     gsap.fromTo(
-      '.letter', 
+      '.letter',
       {
         opacity: 0,
-        scale: 0.2,
-        y: -10,
-        x: 50,
-      }, 
+        y: 60,
+        scale: 0.9,
+      },
       {
         opacity: 1,
-        scale: 1,
         y: 0,
-        x: 0,
-        stagger: 0.08,
-        duration: 0.5,
-        ease: 'back.out(1.7)',
+        scale: 1,
+        delay: 0.5,
+        stagger: 0.06,
+        duration: 0.4,
+        ease: 'power3.out',
       }
     );
   }, []);
