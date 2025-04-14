@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './pages/Home';
+import HowIBuild from './pages/HowIBuild';
+import Nav from './components/Nav';
 import IntroPage from './components/IntroPage';
 import './index.css'
 
@@ -11,13 +12,18 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setShowIntro(false)
-    }, 2000)
+    }, 2500)
   }, []);
 
   return (
     <Router>
       <Routes>
-        <Route path="/" element={showIntro ? <IntroPage /> : <Home />} />
+        <Route path="/" element={showIntro ? <IntroPage /> : <div className="main">
+          <Nav />
+          <div className="contentCont">
+            <HowIBuild />
+          </div>
+        </div>} />
       </Routes>
     </Router>
   );

@@ -26,17 +26,19 @@ function IntroPage() {
   return (
     <div className="flex justify-center items-center h-screen bg-gray-100">
       <div className="loader flex gap-2 font-exo2 text-4xl font-extrabold text-gray-900">
-        <div className="letter">M</div>
-        <div className="letter">O</div>
-        <div className="letter">H</div>
-        <div className="letter">I</div>
-        <div className="letter">T</div>
-        <div className="letter">B</div>
-        <div className="letter">H</div>
-        <div className="letter">A</div>
-        <div className="letter">T</div>
-        <div className="letter">I</div>
-        <div className="letter">A</div>
+        <div className="letter" data-letter = "M">M</div>
+        <div className="letter" data-letter = "o">o</div>
+        <div className="letter" data-letter = "h">h</div>
+        <div className="letter" data-letter = "i">i</div>
+        <div className="letter" data-letter = "t">t</div>
+        <div className="letter" data-letter = " "> </div>
+        <div className="letter" data-letter = "B">B</div>
+        <div className="letter" data-letter = "h">h</div>
+        <div className="letter" data-letter = "a">a</div>
+        <div className="letter" data-letter = "t">t</div>
+        <div className="letter" data-letter = "i">i</div>
+        <div className="letter" data-letter = "a">a</div>
+
       </div>
     </div>
   );

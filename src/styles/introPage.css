@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Corben:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
 
 #root {
     width: 100%;
@@ -12,11 +12,25 @@
     display: flex;
     justify-content: center;
     gap: .2rem;
-    font-family: "Corben", serif;
+    font-family: "Fredoka", sans-serif;
     font-weight: 900;
     font-size: 3rem;
-    color: rgb(36, 36, 36);
+    color: rgba(255, 255, 255, 0.849);
 }
+
+.letter::before {
+    content: attr(data-letter);
+    position: absolute;
+    top: 100%;
+    transform: rotateX(180deg);
+    margin-top: -1rem;
+    opacity: .5;
+    background: linear-gradient(180deg, transparent, rgba(245, 245, 245, 0.052), rgba(245, 245, 245, 0.263));
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+
 
 .letter:nth-child(5) {
     margin-right: .5rem;

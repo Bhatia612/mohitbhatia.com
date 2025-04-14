@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Fredoka:wght@300..700&display=swap');
+
+nav {
+    width: fit-content;
+    padding: .5rem 0 0 .5rem;
+    width: 20%;
+
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 1.5rem;
+    font-family: "Fredoka", sans-serif;
+}
+
+big {
+    font-weight: 500;
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+}
+
+small {
+    letter-spacing: 1px;
+    margin-top: -.5rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.652);
+    font-size: .9rem;
+}
+
+.img {
+    width: 100px;
+    height: 100px;
+    background-image: url('../assets/profile.jpg');
+    aspect-ratio: 1;
+    border: 3px solid rgb(185, 185, 185);
+    border-radius: 50%;
+    background-size: 150%; /* This zooms the image */
+    background-position: top center; /* Aligns the image to the top center */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding-top: .5rem;
+    border-top: 2px solid rgba(255, 255, 255, 0.201);
+}
+
+ul li {
+    list-style: none;
+    position: relative;
+    font-family: "Exo 2", sans-serif;
+}
+
+ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+ul li a:hover {
+    background: #0000001e;
+}
