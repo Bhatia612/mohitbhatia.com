@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Fredoka:wght@300..700&display=swap');
+
+
+.approach-container {
+    color: #fff;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2rem;
+    font-family: "Exo 2", sans-serif;
+  }
+  
+  .approach-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    border-bottom: 1px solid whitesmoke;
+    padding-bottom: 0.5rem;
+  }
+  
+  .approach-content {
+    max-width: 768px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .section-heading {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: whitesmoke;
+    margin-bottom: 0.25rem;
+  }
+  
+  .section-text {
+    color: rgba(255, 255, 255, 0.652);
+  }
+  

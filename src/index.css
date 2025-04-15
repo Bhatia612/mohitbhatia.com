@@ -27,4 +27,10 @@ body {
   padding: 2rem;
   width: 80%;
   border-left: 2px solid rgba(255, 255, 255, 0.201);
+  overflow: auto;
+  scrollbar-width: none;
+}
+
+.contentCont::-webkit-scrollbar {
+  display: none;
 }
