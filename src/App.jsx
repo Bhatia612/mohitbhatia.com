@@ -35,7 +35,7 @@ function App() {
   }, []);
 
   return (
-    <Router>
+    <Router basename="/mohitbhatia.com">
       <Routes>
         <Route path="*" element={showIntro ? <IntroPage /> : <AppLayout />} />
       </Routes>
