@@ -48,6 +48,7 @@ small {
     justify-content: center;
     align-items: center;
     transition: all .5s ease;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
 
 .img:hover {
@@ -85,7 +86,7 @@ ul li a {
 }
 
 ul li a:hover {
-    background: hsla(0, 0%, 100%, 0.118);
+    background: hsla(0, 0%, 100%, 0.211);
     margin-left: .5rem;
     border-left: 3px rgba(255, 255, 255, 0.484) solid;
 }

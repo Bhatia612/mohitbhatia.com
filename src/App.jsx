@@ -1,29 +1,43 @@
-import { useEffect, useState } from 'react'
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HowIBuild from './pages/HowIBuild';
+import Contact from './pages/Contact';
+import Stack from './pages/Stack';
+import Links from './pages/Links';
 import Nav from './components/Nav';
 import IntroPage from './components/IntroPage';
-import './index.css'
+import './index.css';
 
+function AppLayout() {
+  return (
+    <div className="main">
+      <Nav />
+      <div className="contentCont">
+        <Routes>
+          <Route path="/" element={<HowIBuild />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/stack" element={<Stack />} />
+          <Route path="/links" element={<Links />} />
+        </Routes>
+      </div>
+    </div>
+  );
+}
 
 function App() {
   const [showIntro, setShowIntro] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => {
-      setShowIntro(false)
-    }, 2500)
+    const timer = setTimeout(() => {
+      setShowIntro(false);
+    }, 2500);
+    return () => clearTimeout(timer);
   }, []);
 
   return (
     <Router>
       <Routes>
-        <Route path="/" element={showIntro ? <IntroPage /> : <div className="main">
-          <Nav />
-          <div className="contentCont">
-            <HowIBuild />
-          </div>
-        </div>} />
+        <Route path="*" element={showIntro ? <IntroPage /> : <AppLayout />} />
       </Routes>
     </Router>
   );

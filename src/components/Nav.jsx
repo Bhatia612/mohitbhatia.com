@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/nav.css'
 
 function Nav() {
@@ -10,10 +11,10 @@ function Nav() {
         <small>Web Developer</small>
       </div>
       <ul className="list-none">
-        <li><a href="#" className="no-underline">How I Build</a></li>
-        <li><a href="#" className="no-underline">Contact</a></li>
-        <li><a href="#" className="no-underline">Stacks</a></li>
-        <li><a href="#" className="no-underline">Links</a></li>
+        <li><Link to="/" className="no-underline">How I Build</Link></li>
+        <li><Link to="/contact" className="no-underline">Contact</Link></li>
+        <li><Link to="/stack" className="no-underline">Stacks</Link></li>
+        <li><Link to="/links" className="no-underline">Links</Link></li>
       </ul>
     </nav>
   );
