@@ -14,11 +14,12 @@ body {
   font-size: 16px;
   background: #000000ec;
   color: whitesmoke;
+  padding: 0 3rem;
 }
 
 .main {
-  width: 70%;
-  aspect-ratio: 2/1;
+  width: 65rem;
+  height: 80vh;
   display: flex;
   justify-content: space-between;
 }
