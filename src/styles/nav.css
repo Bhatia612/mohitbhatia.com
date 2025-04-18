@@ -180,7 +180,7 @@ ul li a:hover {
 @media (max-width: 480px) {
     .img {
         position: absolute;
-        width: 70px;
+        width: 80px;
         top: 5vh;
         left: 50vw;
         transform: translateX(-90%);
