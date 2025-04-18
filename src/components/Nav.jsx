@@ -12,9 +12,9 @@ function Nav() {
       </div>
       <ul className="list-none">
         <li><Link to="/" className="no-underline">How I Build</Link></li>
+        <li><Link to="/contact" className="no-underline">Contact</Link></li>
         <li><Link to="/stack" className="no-underline">Stacks</Link></li>
         <li><Link to="/links" className="no-underline">Links</Link></li>
-        <li><Link to="/contact" className="no-underline">Contact</Link></li>
       </ul>
     </nav>
   );
