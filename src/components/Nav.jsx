@@ -5,6 +5,7 @@ import '../styles/nav.css';
 function Nav() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [hoverTitle, setHoverTitle] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -17,7 +18,6 @@ function Nav() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  // Close menu when route changes
   useEffect(() => {
     setMenuOpen(false);
   }, [location]);
@@ -28,12 +28,16 @@ function Nav() {
 
   return (
     <nav>
-      <div className="profile">
+      <div className="profile" 
+           onMouseEnter={() => setHoverTitle(true)}
+           onMouseLeave={() => setHoverTitle(false)}>
         <div className="img"></div>
         <big>Mohit Bhatia</big>
-        <small>Web Developer</small>
+        <small>
+          {hoverTitle ? "Professional Console.log() User" : "Web Developer"}
+        </small>
       </div>
-      
+
       {isMobile && (
         <button className="hamburger" onClick={toggleMenu}>
           <div className={`hamburger-line ${menuOpen ? 'open' : ''}`}></div>
@@ -41,12 +45,37 @@ function Nav() {
           <div className={`hamburger-line ${menuOpen ? 'open' : ''}`}></div>
         </button>
       )}
-      
+
       <ul className={`list-none ${isMobile ? 'mobile-menu' : ''} ${menuOpen ? 'open' : ''}`}>
-        <li><Link to="/" className="no-underline" onClick={() => isMobile && setMenuOpen(false)}>How I Build</Link></li>
-        <li><Link to="/stack" className="no-underline" onClick={() => isMobile && setMenuOpen(false)}>Stacks</Link></li>
-        <li><Link to="/links" className="no-underline" onClick={() => isMobile && setMenuOpen(false)}>Links</Link></li>
-        <li><Link to="/contact" className="no-underline" onClick={() => isMobile && setMenuOpen(false)}>Contact</Link></li>
+        <li className="hidden-joke">Menu? I barely know you!</li>
+        <li>
+          <Link to="/" className="no-underline">
+            How I Build
+            <br />
+            <span className="hidden-joke"> - 90% Googling</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/stack" className="no-underline">
+            Stacks
+            <br />
+            <span className="hidden-joke"> !== [].push(pancakes)</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/links" className="no-underline">
+            Links
+            <br />
+            <span className="hidden-joke"> (The non-circular dependency kind)</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/contact" className="no-underline">
+            Contact
+            <br />
+            <span className="hidden-joke">: !recruiters && humansOnly</span>
+          </Link>
+        </li>
       </ul>
     </nav>
   );

@@ -1,0 +1,82 @@
+/* Add to your existing links.css */
+.contact-options {
+    margin: 1rem 0;
+    padding-left: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.contact-options li {
+    margin-bottom: 0.5rem;
+    position: relative;
+    list-style-type: none;
+}
+
+.contact-options li:before {
+    content: "•";
+    color: #00bcd4;
+    position: absolute;
+    left: -1rem;
+}
+
+.highlight {
+    color: #00bcd4;
+    font-weight: 500;
+}
+
+.hidden-note {
+    display: block;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-style: italic;
+}
+
+.link-subtext {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.5);
+    display: block;
+    margin-top: 0.2rem;
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+.contact-link:hover .link-subtext {
+    opacity: 1;
+}
+
+/* Your existing styles remain unchanged */
+.contact-section {
+    padding: 2rem 1.5rem;
+    color: #fff;
+    font-family: "Exo 2", sans-serif;
+}
+
+.contact-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.contact-text {
+    color: #aaa;
+    font-size: 1rem;
+    max-width: 600px;
+    margin-bottom: 1rem;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-link {
+    color: #00bcd4;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+}
+
+.contact-link:hover {
+    color: #03e9f4;
+}

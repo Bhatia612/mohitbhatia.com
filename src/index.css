@@ -36,6 +36,14 @@ body {
   display: none;
 }
 
+.hidden-joke {
+  font-family: monospace;
+
+}
+
+.contentCont .hidden-joke {
+font-size: .8rem;
+}
 
 @media (max-width: 768px) {
 

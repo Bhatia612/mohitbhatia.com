@@ -1,6 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Fredoka:wght@300..700&display=swap');
+/* Add to your existing CSS */
+.approach-subtitle {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: italic;
+  font-family: "Exo 2", sans-serif;
+}
 
+.process-step {
+  margin-bottom: 2.5rem;
+}
 
+.step-tools {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.4);
+  margin-top: 0.8rem;
+  font-family: "Exo 2", sans-serif;
+  font-style: italic;
+}
+
+.hidden-joke {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-style: italic;
+}
+
+.section-text:hover .hidden-joke {
+  opacity: 1;
+}
+
+.footer-note {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  font-family: "Exo 2", sans-serif;
+}
+
+/* Your original styles remain unchanged */
 .approach-container {
   color: #fff;
   padding: 0 1.5rem;
@@ -13,10 +48,9 @@
 }
 
 .approach-title {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: bold;
   border-bottom: 1px solid whitesmoke;
-  padding-bottom: 0.5rem;
 }
 
 .approach-content {
@@ -44,4 +78,3 @@
 .section-text:hover {
   border-left: 5px solid rgba(255, 255, 255, 0.723);
 }
-
