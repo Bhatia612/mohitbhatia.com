@@ -145,7 +145,12 @@ ul li a:hover {
         padding: 80px 20px 20px;
         transition: right 0.3s ease;
         z-index: 999;
+        transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     }
+
+    ul.mobile-menu li {
+        transition: all 0.3s ease;
+      }
 
     ul.mobile-menu.open {
         right: 0;
@@ -180,9 +185,9 @@ ul li a:hover {
 @media (max-width: 480px) {
     .img {
         position: absolute;
-        width: 80px;
+        width: 100px;
         top: 5vh;
-        left: 50vw;
+        left: 60vw;
         transform: translateX(-90%);
         box-shadow: 0px -10px 10px black;
     }
