@@ -4,7 +4,6 @@ nav {
     width: fit-content;
     padding: .5rem 0 0 .5rem;
     width: 20%;
-
 }
 
 .profile>* {
@@ -34,10 +33,9 @@ small {
     position: relative;
 }
 
-
 .img {
     width: 100px;
-    height: 100px;
+    aspect-ratio: 1;
     background-image: url('../assets/profile.jpg');
     aspect-ratio: 1;
     border: 3px solid rgb(185, 185, 185);
@@ -54,8 +52,6 @@ small {
 .img:hover {
     border-radius: 30%;
 }
-
-
 
 ul {
     display: flex;
@@ -89,4 +85,110 @@ ul li a:hover {
     background: hsla(0, 0%, 100%, 0.211);
     margin-left: .5rem;
     border-left: 3px rgba(255, 255, 255, 0.484) solid;
+}
+
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.hamburger-line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+.hamburger-line.open:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger-line.open:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-line.open:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@media (max-width: 768px) {
+
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 0 1.5rem;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.201);
+    }
+
+    .hamburger {
+        display: block;
+        position: relative;
+        top: 20px;
+    }
+
+    ul.mobile-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 60%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.9);
+        flex-direction: column;
+        padding: 80px 20px 20px;
+        transition: right 0.3s ease;
+        z-index: 999;
+    }
+
+    ul.mobile-menu.open {
+        right: 0;
+    }
+
+    .profile {
+        position: relative;
+        padding: 1rem 0;
+    }
+
+    .profile big,
+    .profile small {
+        position: absolute;
+        white-space: nowrap;
+        left: 110%;
+    }
+
+    .profile big {
+        top: 35%;
+    }
+
+    .profile small {
+        top: 65%;
+    }
+
+    ul {
+        flex-direction: row;
+        border: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .img {
+        position: absolute;
+        width: 70px;
+        top: 5vh;
+        left: 50vw;
+        transform: translateX(-90%);
+        box-shadow: 0px -10px 10px black;
+    }
+
+    .profile small,
+    .profile big {
+        position: static;
+    }
 }
