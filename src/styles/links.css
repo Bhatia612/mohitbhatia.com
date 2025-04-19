@@ -1,8 +1,8 @@
-
 .contact-options {
     margin: 1rem 0;
     padding-left: 1rem;
     color: rgba(255, 255, 255, 0.8);
+    display: flex;
 }
 
 .contact-options li {
@@ -52,22 +52,22 @@
 }
 
 .contact-title {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 600;
-    margin-bottom: 16px;
+    margin-bottom: .5rem;
 }
 
 .contact-text {
     color: #aaa;
     font-size: 1rem;
     max-width: 600px;
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
 }
 
 .contact-links {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: .5rem;
 }
 
 .contact-link {
@@ -79,4 +79,13 @@
 
 .contact-link:hover {
     color: #03e9f4;
+}
+
+@media (max-width: 768px) {
+
+    .contact-options {
+        flex-direction: column;
+    }
+
+
 }

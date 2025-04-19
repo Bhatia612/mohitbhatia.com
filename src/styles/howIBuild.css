@@ -57,7 +57,7 @@
   max-width: 768px;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .section-heading {
@@ -77,4 +77,13 @@
 
 .section-text:hover {
   border-left: 5px solid rgba(255, 255, 255, 0.723);
+}
+
+
+@media (max-width: 768px) {
+
+  .process-step {
+    margin-bottom: 1rem;
+  }
+  
 }
