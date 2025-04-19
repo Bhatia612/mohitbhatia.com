@@ -152,7 +152,7 @@ ul li a:hover {
 
     ul.mobile-menu li {
         transition: all 0.3s ease;
-      }
+    }
 
     ul.mobile-menu.open {
         right: 0;
@@ -182,22 +182,27 @@ ul li a:hover {
         flex-direction: row;
         border: none;
     }
+
+    nav .hidden-joke {
+        opacity: 1 !important;
+        display: inline !important;
+    }
 }
-/* Add to nav.css */
+
 nav .hidden-joke {
     opacity: 0;
     transition: opacity 0.3s ease;
     color: rgba(255, 255, 255, 0.5);
     font-size: 0.7em;
     margin-left: 0.3em;
-  }
-  
-  .profile:hover .hidden-joke,
-  li:hover .hidden-joke {
+}
+
+.profile:hover .hidden-joke,
+li:hover .hidden-joke {
     opacity: 1;
-  }
-  
-  .hamburger-joke {
+}
+
+.hamburger-joke {
     position: absolute;
     left: 120%;
     top: 50%;
@@ -206,14 +211,9 @@ nav .hidden-joke {
     font-family: monospace;
     font-size: 0.7rem;
     white-space: nowrap;
-  }
-  
-  @media (max-width: 768px) {
-    .hidden-joke {
-      display: inline;
-      opacity: 0.6;
-    }
-  }
+}
+
+
 @media (max-width: 480px) {
     .img {
         position: absolute;
@@ -233,4 +233,3 @@ nav .hidden-joke {
         position: static;
     }
 }
-

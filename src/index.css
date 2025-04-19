@@ -42,7 +42,7 @@ body {
 }
 
 .contentCont .hidden-joke {
-font-size: .8rem;
+  font-size: .8rem;
 }
 
 @media (max-width: 768px) {
@@ -70,4 +70,5 @@ font-size: .8rem;
     margin-top: 2rem;
     padding: 2rem 0rem;
   }
+  
 }

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import '../styles/nav.css';
+import "../index.css"
 
 function Nav() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
