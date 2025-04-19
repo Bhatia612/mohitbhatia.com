@@ -64,6 +64,15 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+
+  .hidden-joke {
+    opacity: 1;
+    display: inline;
+  }
+  
+}
+
 @media (max-width: 480px) {
 
   .contentCont {
