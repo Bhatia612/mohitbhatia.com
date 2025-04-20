@@ -87,5 +87,9 @@
         flex-direction: column;
     }
 
+    .link-subtext {
+        opacity: 1;
+    }
+
 
 }

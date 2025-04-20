@@ -38,6 +38,7 @@ small {
 .img {
     width: 100px;
     aspect-ratio: 1;
+    background-color: black;
     background-image: url('../assets/profile.jpg');
     aspect-ratio: 1;
     border: 3px solid rgb(185, 185, 185);
@@ -140,7 +141,7 @@ ul li a:hover {
         position: fixed;
         top: 0;
         right: -100%;
-        width: 60%;
+        width: 80%;
         height: 100vh;
         background-color: rgba(0, 0, 0, 0.9);
         flex-direction: column;
