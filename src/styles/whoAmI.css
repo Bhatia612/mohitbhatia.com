@@ -1,0 +1,105 @@
+/* AboutMe.css */
+.approach-container {
+    color: #fff;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1rem;
+    font-family: "Exo 2", sans-serif;
+}
+
+.approach-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-bottom: 1px solid whitesmoke;
+    margin-bottom: 0.5rem;
+}
+
+.approach-subtitle {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: italic;
+    font-family: "Exo 2", sans-serif;
+    margin-bottom: 1.5rem;
+}
+
+.process-step {
+    margin-bottom: 2.5rem;
+}
+
+.section-heading {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: whitesmoke;
+    margin-bottom: 0.25rem;
+}
+
+.section-text {
+    color: rgba(255, 255, 255, 0.652);
+    border-left: 5px solid rgba(255, 255, 255, 0.201);
+    padding-left: .5rem;
+    transition: all .3s ease;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+}
+
+.section-text:hover {
+    border-left: 5px solid rgba(255, 255, 255, 0.723);
+}
+
+.section-text span {
+    color: whitesmoke;
+    font-weight: 500;
+}
+
+.hidden-joke {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-style: italic;
+}
+
+.section-text:hover .hidden-joke {
+    opacity: 1;
+}
+
+.step-tools {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.4);
+    margin-top: 0.8rem;
+    font-family: "Exo 2", sans-serif;
+    font-style: italic;
+}
+
+.footer-note {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    font-family: "Exo 2", sans-serif;
+}
+
+.project-highlights {
+    padding-left: 1rem;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-highlights li {
+    margin-bottom: 0.5rem;
+
+}
+
+.project-highlights li:before {
+    content: "•";
+    color: rgba(255, 255, 255, 0.4);
+    position: absolute;
+    left: -1rem;
+}
+
+@media (max-width: 768px) {
+    .process-step {
+        margin-bottom: 1.5rem;
+    }
+}

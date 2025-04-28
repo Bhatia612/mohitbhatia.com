@@ -51,6 +51,13 @@ function Nav() {
         <li className="hidden-joke">Menu? I barely know you!</li>
         <li>
           <Link to="/" className="no-underline">
+            Who Am I?
+            <br />
+            <span className="hidden-joke"> - 90% Googling</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/howIBuild" className="no-underline">
             How I Build
             <br />
             <span className="hidden-joke"> - 90% Googling</span>

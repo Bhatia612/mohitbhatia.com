@@ -7,6 +7,7 @@ import Links from './pages/Links';
 import Nav from './components/Nav';
 import IntroPage from './components/IntroPage';
 import './index.css';
+import WhoAmI from './pages/WhoAmI';
 
 function AppLayout() {
   return (
@@ -14,7 +15,8 @@ function AppLayout() {
       <Nav />
       <div className="contentCont">
         <Routes>
-          <Route path="/" element={<HowIBuild />} />
+          <Route path="/" element={<WhoAmI />} />
+          <Route path="/howIBuild" element={<HowIBuild />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/stack" element={<Stack />} />
           <Route path="/links" element={<Links />} />
