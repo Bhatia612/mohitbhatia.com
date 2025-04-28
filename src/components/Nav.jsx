@@ -53,7 +53,7 @@ function Nav() {
           <Link to="/" className="no-underline">
             Who Am I?
             <br />
-            <span className="hidden-joke"> - 90% Googling</span>
+            <span className="hidden-joke"> - Not Spider - Man</span>
           </Link>
         </li>
         <li>
